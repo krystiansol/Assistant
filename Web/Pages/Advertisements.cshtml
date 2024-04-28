@@ -5,9 +5,16 @@
     ViewData["Title"] = "Advertisements";
 }
 
-@foreach (AdModel ad in Model.AdvertisementsCollection!)
-{
-    <div class="text-center">
-        <h1 class="display-4">ad.Id ad.Source</h1>
-    </div>
-}
+<table class="table">
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">source</th>
+    </tr>
+    @foreach (AdModel ad in Model.AdvertisementsCollection!)
+    {
+        <tr>
+            <th scope="row">@ad.Id</th>
+            <td>@ad.Source</td>
+        </tr>
+    }
+</table>
