@@ -1,0 +1,13 @@
+@page
+@using static Web.Pages.AdvertisementsModel
+@model AdvertisementsModel
+@{
+    ViewData["Title"] = "Advertisements";
+}
+
+@foreach (AdModel ad in Model.AdvertisementsCollection!)
+{
+    <div class="text-center">
+        <h1 class="display-4">ad.Id ad.Source</h1>
+    </div>
+}
