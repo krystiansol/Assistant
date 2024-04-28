@@ -20,6 +20,9 @@ tab_width = 4
 # New line preferences
 end_of_line = crlf
 insert_final_newline = false
+[*.sh]
+end_of_line = cr
+
 
 #### .NET Coding Conventions ####
 [*.{cs,vb}]
